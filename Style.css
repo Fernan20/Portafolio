@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /*   list-style: none; */
+    box-sizing: border-box;
+    /* line-height: 1; */
+}
+
+body {
+    /*  height: 100vh;
+    width: auto; */
+    /*  background: black; */
+    /* background: url(images/avatar3.jpg); */
+    /* fallback for old browsers */
+    /*  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /*  background: linear-gradient(to right, #6dd5ed, #2193b0); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-image: url('/images/img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Reboto', sans-serif;
+
+}
+
+.sidebar {
+    width: 130px;
+    /*  height: 100%; */
+    /* Para que la altura abarque cierta medida */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(10, 10, 10, .65);
+    box-shadow: 0 8px 32px rgb(2, 4, 24);
+    border-right: 2px solid rgba(255, 255, 255, .09);
+    transition: .4s ease-in-out;
+}
+
+.sidebar.open {
+    width: 360px;
+}
+
+
+.sidebar .logo {
+    width: 100%;
+    height: 240px;
+    padding: 40px 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.sidebar .logo img {
+    width: 56px;
+    border-radius: 55%;
+    transition: .4s;
+
+}
+
+.sidebar.open .logo img {
+    width: 96px;
+}
+
+
+
+.sidebar .logo h3 {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 12px;
+    font-variant: small-caps;
+    pointer-events: none;
+    opacity: 0;
+    scale: 0;
+
+
+}
+
+.sidebar .logo h3 {
+    scale: 1;
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+
+}
+
+.sidebar .nav-title {
+    color: #dadada;
+    margin: 40px 0 18px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.open .nav-title {
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+.sidebar nav {
+    padding: 0 30px;
+}
+
+.sidebar nav .nav-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+    width: 100%;
+    height: 46px;
+    padding: 0 16px;
+    color: #fff;
+    margin: 8px 0;
+    transition: .3s;
+
+}
+
+.sidebar nav .nav-item.active {
+    background: #ff328e !important;
+}
+
+.sidebar nav .nav-item:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.sidebar nav .nav-item i {
+    font-size: 26px;
+}
+
+.sidebar nav .nav-item span {
+    font-size: 18px;
+    margin-left: 8px;
+    pointer-events: visible;
+    opacity: 0;
+}
+
+.sidebar.open nav .nav-item span {
+    opacity: 1;
+    pointer-events: visible;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+.sidebar hr {
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    margin: 40px 0 50px;
+    background: rgba(255, 255, 255, .1);
+    opacity: 0;
+}
+
+.sidebar.open hr {
+    opacity: 1;
+    transition: .4s;
+}
+
+.sidebar .toggle {
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    top: 180px;
+    right: -20px;
+    font-size: 38px;
+    line-height: 50%;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2px 0 2px 2px;
+    background: linear-gradient(90deg,
+            transparent 50%,
+            rgba(10, 10, 10, .65) 50%);
+
+
+}
+
+.sidebar.open .toggle {
+    transform: translateY(45px);
+
+}
+
+.sidebar .toggle i {
+
+    transition: .4s linear;
+}
+
+.sidebar.open .toggle i {
+    transform: rotateY(180deg);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.sobredatos {
+    width: 100%;
+    background: #fff;
+
+}
+
+.contenido {
+    /*  height: 100px; */
+    background: #1c92d2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    border-radius: 16px;
+
+    margin: 100px;
+    display: block;
+    padding: 100px;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+
+.contenido h2 {
+    text-align: center;
+}
+
+.contenido .cuadroLogo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.cuadroLogo .card-logo {
+    margin: 10%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.logoTecNM img {
+    height: 30px;
+    width: 20px;
+}
+
+
+.logotipo img {
+    height: 200px;
+    width: 200px;
+
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contenido h2 {
+    color: black;
+
+}
+
+.contenido p {
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Conocimientos */
+
+.contenido-container h2 {
+    text-align: center;
+}
+
+.contenido-container .cuadro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.card-lenguajes {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: all 400ms ease;
+}
+
+.card-lenguajes:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.contenido-container .card-lenguajes {
+    margin: 29px;
+    height: 350px;
+    width: 200px;
+    border: #dadada 1px solid;
+
+}
+
+.contenido-container h2 {
+    color: black;
+}
+
+.card-lenguajes img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+
+.logotipo img {
+    height: 100%;
+    width: 100%;
+}
+
+.logotipo img:hover {
+    transform: scale(1.09);
+}
+
+
+.cuadro .card-lenguajes {
+    /* display: flex; */
+
+    text-align: center;
+}
+
+/* .cuadro h4 {
+    color: #fff;
+    font-size: 22px;
+} */
+
+
+
+/* Fin */
+
+
+
+.cuadro h4 {
+    margin: 15%;
+    color: black;
+    font-size: 25px;
+}
+
+.contenido ul,
+li {
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+
+
+
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 0.6rem;
+    /*   border-radius: 90rem; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 3em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}

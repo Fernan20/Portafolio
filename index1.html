@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Style1.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">PortaFolio <b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#">_</a></li>
+                <li><a href="#">_</a></li>
+                <li><a href="#">_</a></li>
+                <li><a href="#">_</a></li>
+            </ul>
+            <div class="links">
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+
+            <div class="cols cols0">
+                <span class="topline">Hola</span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Bienvenido, para visualizar la
+                    información pulse cualquiera de las dos opciones.</p>
+                <div class="btns">
+                    <button><a class="but" href="index.html"> Descargar CV </a></button>
+                    <button><a href="index3.html" class="but"> Acerca de mi</a></button>
+                </div>
+
+            </div>
+
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="images/Java.svg" alt="" id="splash">
+                    <img src="images/react.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["coder", "developer", "Programmer", "designer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+
+</body>
+
+</html>
